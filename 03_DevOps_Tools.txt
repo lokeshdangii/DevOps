@@ -1,0 +1,46 @@
+DevOps Tools overview
+----------------------
+
+Build Tools (Ant/Maven/Gradle)
+
+Repository Tools (SVN / GitHub / BitBucket)
+
+Code Review Tools (PMD / Sonar Qube / Sonar lint)
+
+Code Deployment tools (Jenkins / UDeploy )
+
+Configuration Tools (Chef / Ansible)
+ 
+Containerisation tools (Docker)
+
+Orchestration tools (Kubernetes)
+
+Monitoring tools (Nagios / Grafana / Prometheus / ELK Stack)
+
+Project Management tools (Jira)
+
+Infrastructure as a Code (IaaC) (Terraform)
+
+
+Maven:- Build tool only for Java  
+
+    - Project creation
+    - dependencies downloading
+    - Project compilation
+    - Unit test execution
+    - packaging (jar/war)
+
+GitHub Repository:-
+
+    - Code integration (code at one place)
+    - Monitored access 
+
+Jenkins:-
+
+    - Heart of the DevOps
+    - Deployment tool / CICD tool
+    - we can perform CI/CD
+    - Build + Deployment
+
+
+
