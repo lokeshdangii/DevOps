@@ -1,0 +1,87 @@
+Sofware Development Life Cyclce (SDLC)
+-------------------------------------------------------
+-> The process of developing and delivering S/W project is called as SDLC.
+
+-> In SDLC we have several phases -
+
+1) Requirements Gathering.
+2) Requirements Analysis.
+3) Desing / Planning
+4) Coding / Implementation / Development
+5) Testing
+6) Deploy
+7) Deliver
+8) Maintenance
+  
+DevOps is used in all the phases of SDLC.
+
+
+
+
+Waterfall methodology:-
+----------------------- 
+
+-> Earlier people used to follow Waterfall methodology to develop project  --> Outdated approach, not used nowadays
+
+-> Waterfall is a linear methodology to develop and delover projects
+
+-> Everything is going to done step by step  
+
+-> In Waterfall we will move only in forward direction
+ 
+-> In this all the steps/phases are going to done one after the other.
+
+-> Requirements are fixed
+
+-> Budget is fixed
+
+-> Client involvment is very less
+
+-> Client will se the project at the end
+
+-> If in the end if the client is not satisfied than the whole money and time will be wasted.
+
+-> Waterfall Methodology is not suitable for big projects
+
+
+
+Agile Methodology :- Overcome of Waterfall 
+-------------------
+
+-> Agile is an iterative approach to develop and deliver project
+
+-> Development and Testing will happen parallely
+
+-> Client involvment will be very high
+
+-> We will deliver project in multiple releases (Sprints)
+
+-> For every release we will take client feedback
+
+-> Requirements are not fixed
+
+-> Budget is not fixed
+
+-> Nowadays agile methodology is followed in the industry.
+
+-> Every release is called Sprint in this
+
+-> Project Development, Testing, and Delivery are very frequent in Agile
+
+-> Using DevOps culture we can adopt agile methodology very easily.
+
+-> DevOps is promoting Agile methodology.
+
+-> Using DevOps we can achieve CI & CD.
+
+
+ 
+DevOps Advantages:-
+
+    Speed
+    Rapid Development
+    Fast releases
+    Reliability
+    Security
+    Client Satisfaction
+    Teams Collaboration will be available
