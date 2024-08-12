@@ -1,0 +1,42 @@
+DevOps is not a Technology, it is a culture.
+DevOps is a process/ set of practices to Deliver a project to client quickly.
+DevOps means Development + Operations.
+By using this DevOps culture we are going to collaborate Development activities and operational activities 
+
+DevOps is a set of practices, tools, and a cultural philosophy that automate and integrate the processes between S/W Development and IT teams.
+
+Learning DevOps means learning devops tools.
+
+Using DevOps culture we can simplify software project delivery process to clients.
+ 
+The main aim of the DevOps is to simplify the release of the Project.
+
+Development Team -
+    1) Understand clinet requirements
+    2) based on requirements develop programs (coding)
+    3) test the programs
+    4) keep code in the repository
+
+
+IT Operations Team -
+    1) Setup virtual machines
+    2) setup servers
+    3) setup database
+    4) take code from repository
+    5) code build & package (.jar & .rar [Maven])
+    6) deploy code in server
+    7) deliver project to client 
+
+
+DevOps Advantages :-
+    Speed
+    Improved Collaboration
+    Rapid Delivery
+    Quality and Reliability
+    Security. 
+
+Challenges with DevOps:-
+    DevOps isn’t any single person’s job. It’s everyone’s job.
+    It's a team job.  
+     
+DevOps is used throughout the SDLC process. 
