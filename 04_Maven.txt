@@ -1,0 +1,57 @@
+Maven
+-----------------
+
+-> Maven is a free and open source s/w given by Apache Organisation.
+
+-> Maven s/w is developed using Java programming language
+
+-> Maven is used to perform Build Automation for Java projects.
+
+-> Maven is called as Java Build Tool
+
+
+
+What we can do using maven ?
+-------------------------------
+
+1) We can create initial project folder structure.
+2) We can download project dependencies.
+    (ex : springboot, hibernate, kafka, redis, mail, log4j, junit, security....etc)
+
+Note: Required dependencies we will configure in "pom.xml"
+
+-> pom stands for project object model
+
+-> when we create maven project then pom.xml file will be created automatically
+
+-> pom.xml will act as input file for maven s/w.
+
+3) We can compile project source code using Maven
+
+Note: Compilation means converting java source code into byte code
+                        Compilation
+        Demo.java ---------------------------> Demo.class
+
+Note: java project means collection of java programs. 
+
+4) We can package java project as jar or war file using maven.
+
+    JAR - Java Archieve
+    WAR - Web Archieve
+
+ -> Standalone java applications will be executed as a jar file
+
+ -> java Web application will be executed as a war file.
+
+ -> Standalone application means which will only execute in one computer. ex:- Calculator
+
+
+    
+                  compile                     package           deployment
+1000 .java files ========> 1000 .class files =========> war  =================> Web Server (irctc.war)
+
+
+
+
+
+Note: 1 lakh .class files can be packaged as one war files and that one war file is deployed (sent) to the server
