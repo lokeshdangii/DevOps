@@ -1,0 +1,114 @@
+Maven Terminology
+++++++++++++++++++
+
+archetype
+groupId
+artifactId
+packaging
+
+
+-> Archetype represents what type of project we want to create
+
+    > maven-archetype-quickstart : It represents java Standalone application
+
+    > maven-archetype-webapp : It represents java web application
+
+Note: Maven providing 1500+ archetypes
+
+
+
+-> groupId represents company name or project name
+
+
+-> artifactId represents project name or project module name
+
+-> packaging represents how we want to package our java application (jar or war)
+
+
+Creating Standalone application using maven
+--------------------------------------------
+
+1) Create one folder(directory) for maven practise
+2) Open terminal from that folder
+3) Exexute below command
+
+>> mvn archetype:generate -DgroupId=in.ashokit -DartifactId=01-Maven-App -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+4) Once project created verify project folder structure
+
+.
+└── 01-Maven-App
+    ├── pom.xml
+    └── src
+        ├── main
+        │   └── java
+        │       └── in
+        │           └── ashokit
+        │               └── App.java
+        └── test
+            └── java
+                └── in
+                    └── ashokit
+                        └── AppTest.java
+
+
+    src/main/java: application source code (.java files)
+
+    src/test/java: application Unit Test code (.java files)
+
+    pom.xml: Project Object Model (Maven Configuration file)
+
+5) we can add dependencies in pom.xml file
+6) we can find dependencies in www.mvnrepository.com website.
+
+7) Add below dependency in pom.xml file
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-core</artifactId>
+        <version>6.1.11</version>
+    </dependency>
+
+
+
+Creating web application using maven 
+--------------------------------------
+
+>> mvn archetype:generate -DgroupId=in.ashokit -DartifactId=02-Maven-App -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+    02-Maven-App/
+    ├── pom.xml
+    └── src 
+        └── main
+            ├── resources
+            └── webapp
+                ├── index.jsp
+                └── WEB-INF
+                    └── web.xml
+
+
+
+Note: If you want any dependency you can find that dependency info on mvnrepository.com
+
+
+
+How maven will download dependencies?
+--------------------------------------
+
+-> Maven will download dependencies using repository
+-> In maven we have 3 types of repositories
+
+    1) Central repository
+    2) Remote repository
+    3) Local repository
+
+-> central repository is maintaining by apache organisation
+
+-> every company will maintain their own repository
+
+-> Local repository will be created in our system 
+    In windows (C://users/<uname>/.m2)
+
+
+

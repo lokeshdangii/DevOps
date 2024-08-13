@@ -1,0 +1,46 @@
+Maven Installation
+-------------------
+
+1) Download and install Java
+
+    -> When we install java we will get below 2 things
+
+        1) JDK
+        2) JRE 
+
+    -> JDK contains set of tools to develop java programs
+    -> JRE contains platfrom/environment which is used to run java programs
+
+2) Set JAVA_HOME in environment variable (System environment Variable)
+        
+        User Environment Variables: Specific for particular account which is logged in our PC
+        System Environment Variables: For all Accounts
+
+    Note: Environment Variables will be used by OS
+
+
+3) Set Path for JAVA ( for Windows)
+
+4) Verify Java installation by executing below command in terminal 
+
+    > java -version
+
+5) Download Maven S/W from Apache website.
+
+6) Set MAVEN_HOME in System Environment Variables
+
+7) Set Path for Maven  
+
+    Note: For Ubuntu -> sudo apt install maven -> -> mvn -version
+
+8) Verify Maven installation by executing below command in terminal
+    
+    > mvn -version 
+
+
+
+
+
+
+
+
