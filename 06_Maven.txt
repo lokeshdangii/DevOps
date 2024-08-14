@@ -91,8 +91,6 @@ Creating web application using maven
 
 Note: If you want any dependency you can find that dependency info on mvnrepository.com
 
-
-
 How maven will download dependencies?
 --------------------------------------
 
@@ -109,6 +107,4 @@ How maven will download dependencies?
 
 -> Local repository will be created in our system 
     In windows (C://users/<uname>/.m2)
-
-
-
+    In Linux (/home/lokesh/.m2)
