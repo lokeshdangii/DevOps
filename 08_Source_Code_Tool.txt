@@ -1,0 +1,38 @@
+Session 9
+
+
+
+Source Code Repository Tools / Version control System/ S/W
+++++++++++++++++++++++++++++
+
+-> Multiple developers will work for project development
+
+-> Developers will be working from multiple locations
+
+-> All developers code should be store at one place (Code Integration Should Happen)
+
+-> To integrate all the developers Source code at one place we will use SourceCode Repository softwares.
+
+
+
+Advantages with Source Code Repository S/w
++++++++++++++++++++++++++++++++++++++++++++
+
+1) All the developers can connect to repository server and can integrate the code.
+
+2) Repository server will provide monitored access
+
+            - Who
+            - When
+            - Why
+            - What
+
+
+Repository Tools
+++++++++++++++++
+
+SVN (Outdated)
+GitHub
+BitBucket
+
+ 

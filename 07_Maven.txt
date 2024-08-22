@@ -1,0 +1,57 @@
+Session 8
+
+Whenever we add dependencies in pom.xml file?
+
+First maven will search for the dependency in local repository.
+
+If local repository contains that dependency maven will take that dependency and add it to the project build path
+
+-> If dependency not available in local repository then maven will connect to Central Repository or Remote Repository based on our Configuration.
+
+Note: By default maven will connect with central repository. If we want to use remote repository then we need to configure remote repository details.
+
+Note: Every S/W company will maintain their own remote repository (Ex: JFrog)
+ 
+Configuring Remote Repository
+++++++++++++++++++++++++++++++
+
+<repositories>
+    <repository>
+        <id>id</id>
+        <url>jfrog-repo-url</url>
+    <repository>
+</repositories>
+
+
+
+
+Maven Goals
++++++++++++
+
+-> To perform project build activities maven provided several Goals
+
+    Clean
+    compile
+    test
+    package
+    install
+
+-> clean goal is used to delete target folder in maven
+
+-> compile goal is used to compile project source code. Compiled code will be stored in the target folder.
+
+                compile
+        .java ------------> .class
+
+-> Test goal is used to execute unit test code of our application (junit code)
+
+-> package goal is used to generate jar or war file for our application based on packaging type available in pom.xml jar or war file will be created in target folder.
+
+-> install goal is used to install our project as dependency in maven local repository.
+
+Note: Every maven goal is associated with maven plugin. When we execute maven goal then respective maven plugin will execute to perform the operation.
+
+Syntax: mvn <goal-name>
+
+Note: We need to execute maven goals from project folder
+
