@@ -1,0 +1,60 @@
+Session 12  -> 24-05-2022
+
+Git Stash
+
+When we are working on one task suddenly we may get some other priority tast.
+
+Usecase
+++++++++
+
+-> Manager assigned tast id : 101
+-> I am working on that task (I am in the middle of that task)
+-> Manager told that stop the work for 101 and complete 102 on priority 
+-> Once 102 is completed then resume your work on 101
+
+-> When Manager asked us to start 102 task, we have already done few changes for 101 (partially completed)
+   
+->  We can't push partial changes to repository because with our partial changes existing functionality may break.
+
+-> We can't delete our changes because we have spent few hours of time to implement those changes.
+
+
+==> In this scenario we will go for 'git stash' option
+
+=> Git stash is used to save working tree changes to temporary location and make working tree clean.
+
+-> After priority work completed we can get stashed changes back using 'gitstash apply' 
+
+
+Git Branches
+
+-> In GitHub we can create Branches
+
+-> To clone particular branch in git repo we will use below command 
+
+    $ git clone -b <branch-name> <repo-url>
+
+
+Git merger vs rebase
+
+=> These commands are used to merge changes from one branch to another branch
+
+-> Git merge will maintain commit history
+
+-> Git rebase will not maintain commit history
+
+
+-> When we are working on particular sprint and we want to merge changes from one branch to another brach then we will use 'git megre' command
+
+-> Once sprint -1 is delivered then we want to take latest code of sprint-1 to start sprint-2 development. In this scenario we don't need commit history so we will use 'git rebase' command.
+
+
+git pull
++++++++++
+
+-> pull command is used to take latest changes from repository to local
+
+-> When we want to make some changes to code, it is always recommended to take git pull.
+
+Note : When we execute 'git pull' there is a chance of getting conflicts. We need to resiolve the conflict and we should push the code without conflicts.
+ 
