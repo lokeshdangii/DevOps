@@ -1,0 +1,23 @@
+Session 15 May 30 20222
+
+-> Environment means the platform which is used to run our application.
+
+-> In Realtime, we will use multiple environments to run our application 
+
+            -> DEV Environment
+            -> SIT Environment
+            -> UAT Environment
+            -> Pilot Environment
+            -> Prod Environment
+
+
+-> Developers will use DEV environment for integration testing.
+
+-> SIT env will be used by Sotfware Testing team to test our application functionality. SIT stands for System Integration Testing.
+
+
+-> UAT means User Accesptance Testing. UAT will done by Client. For Client testing we will give UAT environment.
+
+Note : After UAT testing, Client will decide GO or NO-GO. GO means go for production deployment.  
+
+-> When client identify some critical bugs in UAT then they will say NO GO. 

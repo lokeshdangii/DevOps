@@ -1,0 +1,106 @@
+
+Apache Tomcat Server
+++++++++++++++++++++
+
+
+
+=> Apache Tomcat is a web Server
+
+=> Apache Tomcat is used to run Java Web Applications
+
+=> Apache Tomcat is free & open source
+
+=> Apache Tomcat runs on 8080 port by default (we can change the port)
+
+
+
+
+Apache Tomcat folder structure
++++++++++++++++++++++++++++++++
+
+
+ bin : it contains commands to start and stop tomcat server
+
+ conf : it contains configuration files
+
+ lib : it contains libraries (jar files)
+
+ logs : it contains server logs
+
+ temp : temp files will be created here, we can delete them.
+
+ webapps : This is called deployment folder.
+
+
+
+Note : We will keep file in webapps folder for deployment. 
+
+Ques : Can we deploy multiple war files in we folder? 
+Ans : Yes we can deploy but not recommended. deploying multiple files on single server is not recommended but possible.
+
+
+
+Working with Apache Tomcat in Linux
++++++++++++++++++++++++++++++++++++
+
+-> Login into AWS Management Console
+-> Create EC2 Instance
+-> connect to EC2 Instance using MobaXterm/Putty/SSH
+-> install java s/w using below command
+
+    $sudo apt install java-1.8.0-openjdk
+
+-> We can download apache tomcat from official website
+
+-> we can find apache tomcat urls to download in official website download page
+
+-> Copy the URL of tar file and execute below cmd in instance 
+
+    $ wget <tomcat-tar-file-url>
+
+-> After tomcat tar file got downloaded then extract tomacat tar file using tar cmd
+
+    $ tar -xvf <tomcat-tar-file>
+
+-> Go inside tomcat folder and see folder structure
+
+-> Go to tomcat bin directory and run tomcat server
+
+    $ cd bin
+    $ ./startup.SSH
+
+Note : Tomcat server runs on 8080 port by default. Enable this port in SG of EC2 instance as custom tcp.
+
+
+-> Access Tomcat server form your browser.
+
+    URL : http://EC2-Public-IP:8080/ 
+
+Note : It should open tomcat server home page. 
+
+
+=> By default the Host Manager is only accessible from a browser running on the same machine as Tomcat. If you wish to modify this restriction, you'll need to edit the Host Manager's context.xml file.
+
+-> File Location : <tomcat>/webapps/mamager/META-INF/context.xml
+
+-> In manager context.xml file, change <Valve> section like below (allow attribute value changed)
+
+<Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow=".*" />
+
+ 
+=> Add tomcat users in tomcat/conf/tomcat-users.xml file like below
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+<role rolename="manager-gui" />
+<user username="tomcat" password="tomcat" roles="manager-gui" />
+<role rolename="admin-gui" />
+<user username="admin" password="admin" roles="manager-gui, admin-gui" />
+
+    -> After that Stop and start the tomcat server from bin (restart)
+
+
+
+-> When we change tomcat port number in server.xml file then we have to enable tht port in SG associated with our EC2 instance.
+
