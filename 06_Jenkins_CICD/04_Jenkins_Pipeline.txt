@@ -1,0 +1,56 @@
+Jenkins Pipeline
++++++++++++++++++
+
+
+-> Sequence of Jobs execution is called as Pipeline
+
+-> For our application we will have multiple environments.
+
+-> For every environment, one Jenkins job will be created
+
+    JENKINS_DEV_JOB -----------> DEV Environment (DEV Server)
+    JENKINS_SIT_JOB -----------> SIT Environment (SIT Server)
+    JENKINS_UAT_JOB -----------> UAT Environment (UAT Server)
+    JENKINS_PILOT_JOB -----------> Pilot Environment (Pilot Server)
+    JENKINS_PROD_JOB -----------> Prod Environment (Prod Server)
+
+
+-> If we want to deploy code changes to all environments then it is recommended to create Build Pipeline.
+
+-> By using Build Pipeline we can execute JENKINS jobs sequentially.
+
+
+
+Requirements
+++++++++++++
+
+-> If code commit happened in github then deploy code into Dev Server.
+
+-> If DEV Server Deployment successfull, then deploy code into SIT environment
+
+-> If SIT Server deployment successful, then deploy code into UAT environment.
+
+
+
+Steps to Create Jenkins Pipeline
+++++++++++++++++++++++++++++++++
+
+1) Create EC2 VM and install Tomcat Server (DEV Server)
+
+2) Create EC2 VM and install Tomcat Server (DEV Server)
+
+3) Create EC2 VM and install Tomcat Server (DEV Server)
+
+4) Create EC2 VM and install Jenkins (Jenkins Server VM) 
+
+5) Install JDK, Maven, Git, Deploy to Container in the EC2 in which Jenkins s/w installed.
+
+6) Create Jobs in Jenkins Server.
+
+        Dev-Job ----> Dev Server
+
+        SIT-Job ----> SIT Server (SIT Job execute if DEV-JOb is stable)
+
+        UAT-JOb ----> UAT Server  (UAT Job should execute if SIT-JOB is stable)
+
+7) Create Jenkins Build Pipeline to execute Jobs in Sequence.

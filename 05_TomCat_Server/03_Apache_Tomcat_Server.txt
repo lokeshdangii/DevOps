@@ -81,7 +81,7 @@ Note : It should open tomcat server home page.
 
 => By default the Host Manager is only accessible from a browser running on the same machine as Tomcat. If you wish to modify this restriction, you'll need to edit the Host Manager's context.xml file.
 
--> File Location : <tomcat>/webapps/mamager/META-INF/context.xml
+-> File Location : <tomcat>/webapps/manager/META-INF/context.xml
 
 -> In manager context.xml file, change <Valve> section like below (allow attribute value changed)
 
