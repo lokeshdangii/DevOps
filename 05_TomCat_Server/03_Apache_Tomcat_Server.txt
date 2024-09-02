@@ -92,11 +92,11 @@ Note : It should open tomcat server home page.
 => Add tomcat users in tomcat/conf/tomcat-users.xml file like below
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-
+<role rolename="manager-script" />
 <role rolename="manager-gui" />
 <user username="tomcat" password="tomcat" roles="manager-gui" />
 <role rolename="admin-gui" />
-<user username="admin" password="admin" roles="manager-gui, admin-gui" />
+<user username="admin" password="admin" roles="manager-gui,manager-script,admin-gui" />
 
     -> After that Stop and start the tomcat server from bin (restart)
 
