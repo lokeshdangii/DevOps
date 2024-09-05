@@ -55,6 +55,8 @@ $ sudo apt-get update
 
 $ sudo apt-get install default-jre
 
+-> Set JAVA_HOME in .bashrc or /etc/environment
+
 4) Install Jenkins in Ubuntu VM with below commands
 
 $ curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \

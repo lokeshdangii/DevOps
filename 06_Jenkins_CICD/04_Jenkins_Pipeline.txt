@@ -37,9 +37,9 @@ Steps to Create Jenkins Pipeline
 
 1) Create EC2 VM and install Tomcat Server (DEV Server)
 
-2) Create EC2 VM and install Tomcat Server (DEV Server)
+2) Create EC2 VM and install Tomcat Server (SIT Server)
 
-3) Create EC2 VM and install Tomcat Server (DEV Server)
+3) Create EC2 VM and install Tomcat Server (UAT Server)
 
 4) Create EC2 VM and install Jenkins (Jenkins Server VM) 
 
@@ -54,3 +54,15 @@ Steps to Create Jenkins Pipeline
         UAT-JOb ----> UAT Server  (UAT Job should execute if SIT-JOB is stable)
 
 7) Create Jenkins Build Pipeline to execute Jobs in Sequence.
+
+
+
+How to create Jenkins job with Build parameter
+
+-> Create New Item
+-> Enter Item Name & Select free style project
+-> Select "This project is parameterized" in General Section.
+-> Select Choice parameter
+-> Name : Branch Name
+-> Choices : Enter every branch name in nextLine
+-> Branches to Build : */${BranchName}
