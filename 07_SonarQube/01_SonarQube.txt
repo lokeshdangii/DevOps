@@ -1,0 +1,33 @@
+SonarQube Installation
+++++++++++++++++++++++
+
+
+sudo su
+apt install wget -y
+cd /opt
+sudo apt install java-1.8.0-openjdk
+java -version
+apt install unzip -y
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.6.0.92116.zip
+unzip sonarqube
+
+Note: SonarQube server will not run with root user
+
+-> Create new user
++++++++++++++++++++
+
+useradd sonar
+visudo
+
+-> configure sudo user without pwd
+sonar ALL=(ALL) NOPASSWD: ALL
+
+-> Change ownership for sonar folder
+
+chown -R sonar:sonar /opt/sonarqube
+chmod -R 775 /opt/sonarqube
+su - sonar (switching to sonar user)
+
+
+
+-> Go to bin directory then goto linux directory and run sonar server 
