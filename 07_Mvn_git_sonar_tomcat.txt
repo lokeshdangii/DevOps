@@ -1,0 +1,38 @@
+Jenkins Pipeline (Jenkins + Maven + Git + Sonar + Tomcat)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Note : Install 'ssh-agent plugin' and generate code using pipeline syntax
+
+pipeline{
+    agent any
+    environment{
+        PATH="$PATH:/opt/apache-maven-3.6.3/bin"
+    }
+    stages{
+        stage('GetCode'){
+            steps{
+                git 'repo-url'
+            }
+        }
+        stage('Build'){
+            steps{
+                sh 'mvn clean package'
+            }
+        }
+        stage('SonarReview'){
+            steps{
+                withSonarQubeEnv('Sonar-Server-7.8'){
+                    sh "mvn sonar:sonar"
+                }
+            }
+        }
+        stage('Code deploy'){
+            steps{
+                sshagent(['ec2-user-tomcat']){
+                    sh 'scp -o StrictHostKeyChecking=no target/01-maven-web-app.war ec2-user@ip:/home/ec2-user/apache-tomcat-9.0.63/webapps'
+                }
+            }
+        }
+    }
+}

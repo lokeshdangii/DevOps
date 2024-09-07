@@ -20,7 +20,6 @@ useradd sonar
 visudo
 
 -> configure sudo user without pwd
-sonar ALL=(ALL) NOPASSWD: ALL
 
 -> Change ownership for sonar folder
 
@@ -29,5 +28,6 @@ chmod -R 775 /opt/sonarqube
 su - sonar (switching to sonar user)
 
 
+-> Go to bin directory then goto linux directory and run sonar server by the below command
 
--> Go to bin directory then goto linux directory and run sonar server 
+        $ ./sonar.sh start
