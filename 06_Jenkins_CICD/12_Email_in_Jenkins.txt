@@ -1,0 +1,39 @@
+Email Notification in Jenkins
++++++++++++++++++++++++++++++
+
+
+-> We can configure Email Notification in Jenkins
+
+-> With this option we can send email notification to team members after jenkins job execution completed.
+
+-> We need to configure SMTP properties to send mails
+
+    1) Go to Manage Jenkins
+    2) Add Email Extension Server
+    3) We will add company provided SMTP server details
+
+Note:  For practise we can use Gmail SMTP properties.
+ 
+-> Once SMTP properties addded then we can configure email notifications as 'Post Build Action' in Jenkins job.
+
+ 
+Email by pipeline
++++++++++++++++++
+
+pipeline{
+    agent any
+    stages{
+        stage('Hello'){
+            steps{
+                echo "Hello World"
+            }
+        }
+    }
+    post{
+        always{
+            mail to: "lokeshdangi1045@gmail.com",
+            subject: "Test Email"
+            body: "email-body content"
+        }
+    }
+}
