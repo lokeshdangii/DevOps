@@ -43,7 +43,7 @@ Note: All the above build and deployment tasks can be automated using Jenkins to
 
 ==========================
 Jenkins Installation:
-===========================
+==========================
 
 1) Create an EC2 instance with Ubuntu AMI (t2.micro instance)
 
@@ -107,8 +107,8 @@ Creating First Job in Jenkins
 3) Enter below shellscript
 
 echo "Hello Guys,"
-touch ashokit.txt
-echo "Hello Guys, Welcome to Jenkins Classes" >> ashokit.txt
+touch demo.txt
+echo "Hello Guys, Welcome to Jenkins Classes" >> demo.txt
 echo "Done..!!"
 
 4) Apply and Save

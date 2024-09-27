@@ -25,7 +25,7 @@ What is Jenkinsfile?
 
 Jenkinsfile is nothing but a simple text file which is used to write the Jenkins Pipeline and to automate the Continuous integration process.
 
-Jenkinsfile usually checked in along with the project;s source code in Git repo. Ideally, every application will have its own Jenkinsfile.
+Jenkinsfile usually checked in along with the project's source code in Git repo. Ideally, every application will have its own Jenkinsfile.
 
 Jenkinsfile can be written in two ways -
 
@@ -65,7 +65,7 @@ Jenkins declarative pipeline needs to use the predefined constructs to create pi
 
 Jenkinsfile starts with the word pipeline.
 
-Jenkins declarative pipeline should be the preferred way to create a Jenkins job as they offer a rich set of features, come with less learining curve & no prereausite to learn a programming languafe like Groovy just for the sake of writing pipeline code.
+Jenkins declarative pipeline should be the preferred way to create a Jenkins job as they offer a rich set of features, come with less learining curve & no prereausite to learn a programming language like Groovy just for the sake of writing pipeline code.
 
 We can also validate the syntax of the Declarative pipeline code before running the job. It helps to avoid a lot of runtime issues with the build script.
 
@@ -92,4 +92,4 @@ agent : Specify where the Jenkins build job should run. agent can be at pipeline
 
 stages : stages block constitutes diffrent executable stage blocks. At least one stage block is mandatory inside stages block.
 
-stage : stage block contains the actual execution steps. Stage block has to be defined within stages block. It's mandatory to have at least one stage block insided the stage block. Also it's mandatory to name each stage block & this name will be 
+stage : stage block contains the actual execution steps. Stage block has to be defined within stages block. It's mandatory to have at least one stage block insided the stages block. Also it's mandatory to name each stage block.
