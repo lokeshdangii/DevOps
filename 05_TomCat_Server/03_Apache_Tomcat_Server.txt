@@ -1,4 +1,3 @@
-
 Apache Tomcat Server
 ++++++++++++++++++++
 
@@ -35,7 +34,7 @@ Apache Tomcat folder structure
 
 Note : We will keep file in webapps folder for deployment. 
 
-Ques : Can we deploy multiple war files in we folder? 
+Ques : Can we deploy multiple war files in webapps folder? 
 Ans : Yes we can deploy but not recommended. deploying multiple files on single server is not recommended but possible.
 
 
@@ -102,5 +101,5 @@ Note : It should open tomcat server home page.
 
 
 
--> When we change tomcat port number in server.xml file then we have to enable tht port in SG associated with our EC2 instance.
+-> When we change tomcat port number in server.xml file then we have to enable that port in SG associated with our EC2 instance.
 

@@ -31,11 +31,11 @@ Maven Installation
 
 7) Set Path for Maven  
 
-    Note: For Ubuntu -> sudo apt install maven -> -> mvn -version
+Note: For Ubuntu -> sudo apt install maven -> $ mvn -version
 
 8) Verify Maven installation by executing below command in terminal
     
-    > mvn -version 
+    $ mvn -version 
 
 
 

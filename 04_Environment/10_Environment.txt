@@ -21,3 +21,7 @@ Session 15 May 30 20222
 Note : After UAT testing, Client will decide GO or NO-GO. GO means go for production deployment.  
 
 -> When client identify some critical bugs in UAT then they will say NO GO. 
+
+-> In, Pilot Env our application is deployed with dummy data for testing.
+
+-> Prod Env means providing application to end users. (Real Time Env --> Available publically)

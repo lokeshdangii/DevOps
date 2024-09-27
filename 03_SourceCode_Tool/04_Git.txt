@@ -7,7 +7,7 @@ When we are working on one task suddenly we may get some other priority tast.
 Usecase
 ++++++++
 
--> Manager assigned tast id : 101
+-> Manager assigned task id : 101
 -> I am working on that task (I am in the middle of that task)
 -> Manager told that stop the work for 101 and complete 102 on priority 
 -> Once 102 is completed then resume your work on 101
@@ -35,7 +35,7 @@ Git Branches
     $ git clone -b <branch-name> <repo-url>
 
 
-Git merger vs rebase
+Git merge vs rebase
 
 => These commands are used to merge changes from one branch to another branch
 
@@ -44,7 +44,7 @@ Git merger vs rebase
 -> Git rebase will not maintain commit history
 
 
--> When we are working on particular sprint and we want to merge changes from one branch to another brach then we will use 'git megre' command
+-> When we are working on particular sprint and we want to merge changes from one branch to another brach then we will use 'git megre' command 
 
 -> Once sprint -1 is delivered then we want to take latest code of sprint-1 to start sprint-2 development. In this scenario we don't need commit history so we will use 'git rebase' command.
 
@@ -56,5 +56,5 @@ git pull
 
 -> When we want to make some changes to code, it is always recommended to take git pull.
 
-Note : When we execute 'git pull' there is a chance of getting conflicts. We need to resiolve the conflict and we should push the code without conflicts.
+Note : When we execute 'git pull' there is a chance of getting conflicts. We need to resolve the conflict and we should push the code without conflicts.
  

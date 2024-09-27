@@ -23,7 +23,7 @@ Waterfall methodology:-
 
 -> Earlier people used to follow Waterfall methodology to develop project  --> Outdated approach, not used nowadays
 
--> Waterfall is a linear methodology to develop and delover projects
+-> Waterfall is a linear methodology to develop and deliver projects
 
 -> Everything is going to done step by step  
 
