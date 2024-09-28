@@ -1,0 +1,45 @@
+
+=====
+IAM
+====
+
+=> Identity & Access Management
+
+=> It is used to manage Users, Groups, Policies & Roles
+
+=> IAM is free service.
+
+=> In AWS, we will have 2 types accounts
+
+			1) Root account
+
+			2) IAM account
+
+=> Root account is very powerfull account with no restrictions.
+
+=> If we login with Root user credentials, we can access everything in AWS cloud
+
+Note-1: We shouldn't use root account for day to day activities.
+
+Note-2: We shouldn't share root account credentials with anyone
+
+Note-3: Company will not provide root account credentials for team members
+
+Note-4: To enable high security we can use MFA for root account. 
+
+		MFA : Multi Factor Authentication.
+
+
+
+Root Account ID : 211125343231		
+
+
+
+
+
+
+
+
+
+
+
