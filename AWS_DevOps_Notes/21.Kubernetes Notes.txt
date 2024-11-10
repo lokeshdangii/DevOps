@@ -553,7 +553,7 @@ auto scaling
 
 => If pod damaged then our application will be down.
 
-Note: We shouldn't create POD directley to deploy our application in k8s.
+Note: We shouldn't create POD directly to deploy our application in k8s.
 
 Note: We need to use k8s resources to create pods.
 

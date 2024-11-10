@@ -65,7 +65,7 @@ Ansible Architecture
 
 => The machine which contains ansible software is called as Controlling Node.
 
-=> The machines which are managing by Controlling Node are called as Managed Nodes.
+=> The machines which are managed by Controlling Node are called as Managed Nodes.
 
 => Host inventory file contains managed nodes information.
 
