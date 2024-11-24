@@ -12,7 +12,7 @@ Using DevOps culture we can simplify software project delivery process to client
 The main aim of the DevOps is to simplify the release of the Project.
 
 Development Team -
-    1) Understand clinet requirements
+    1) Understand client requirements
     2) based on requirements develop programs (coding)
     3) test the programs
     4) keep code in the repository

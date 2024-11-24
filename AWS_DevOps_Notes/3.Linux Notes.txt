@@ -665,7 +665,7 @@ What is sudoers file in Linux
 => Using this file we can control which user can run command as a superuser.
 
 # print sudoersfile content
-$ sudo cat /etc/sudeors
+$ sudo cat /etc/sudoers
 
 Note: We should be very careful while working with sudoers file. If we do any mistakes in sudoers file then system will be crashed.
 
